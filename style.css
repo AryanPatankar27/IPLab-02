@@ -1,0 +1,145 @@
+/* External CSS Inclusion */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #007bff; /* Blue background color */
+    color: #333;
+}
+
+header {
+    background-color: #ffffff; /* White background for header */
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for header */
+}
+
+.logo {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Main Content Styles */
+main {
+    background-color: #ffffff; /* White background for main content */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px auto;
+    max-width: 1200px; /* Center content and limit max width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for main content */
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #007bff; /* Blue color for section headings */
+}
+
+.service-item {
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Rounded border */
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9; /* Light background for service items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for service items */
+}
+
+.service-image {
+    width: 100px;
+    float: left;
+    margin-right: 15px; /* Space between image and text */
+}
+
+.service-item h3 {
+    margin-top: 0;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ffffff; /* White background for footer */
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for footer */
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Pseudo-element Selector */
+footer p::before {
+    content: "✉ "; /* Mail icon before footer contact info */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .service-image {
+        width: 80px; /* Adjust image size for smaller screens */
+    }
+    
+    nav ul li {
+        display: block; /* Stack links vertically on small screens */
+        margin: 10px 0;
+    }
+}
